@@ -1,0 +1,11 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="codepen.text-shadowCSS.css">
+    <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+</head>
+<body>
+    <p class="block">HELLO</p>
+    <p class="neon">goodbye</p>
+</body>

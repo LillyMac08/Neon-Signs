@@ -1,0 +1,70 @@
+/*There are multiple color choices because I liked them all and didn't want to get rid of them*/
+/* Pinks: #d52800, #e4accf, #a30061*/
+/* Pink, Yellow, Blue: #fe218b, #fed700, #21b0fe*/
+/* Bye #1: #b00b69, #490469, #042069*/
+/* Bye #2: #cd0067, #993399, #003399*/
+/* Blue Color Scheme: #b700ff, #6776ff, #00f7ff*/
+/* Pretty grenish-blues: #7edf8e, #808cfd, 79f4f8*/
+/* Reds: #ff0000, #ff6600, #ffd900*/
+
+:root {
+	--color1: #cd0067;
+	--color2: #939;
+	--color3: #039;
+    --no: 450px;
+    --goodbye: 400px;
+}
+
+body {
+	background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    z-index: -5;
+    height: 850px;
+}
+
+.block {
+	margin: auto;
+    text-align: center;
+
+    /* NON-BLURRED */
+	text-shadow: 1px 1px var(--color1), 2px 2px var(--color1), 3px 3px var(--color1), 4px 4px var(--color1), 5px 5px var(--color1), 6px 6px var(--color2), 7px 7px var(--color2), 8px 8px var(--color2), 9px 9px var(--color2), 10px 10px var(--color2), 11px 11px var(--color3), 12px 12px var(--color3), 13px 13px var(--color3), 14px 14px var(--color3), 15px 15px var(--color3);
+
+    /* BLURRED
+    text-shadow: 1px 1px 10px var(--color1), 2px 2px 10px var(--color1), 3px 3px 10px var(--color1), 4px 4px 10px var(--color1), 5px 5px 10px var(--color1), 6px 6px 10px var(--color2), 7px 7px 10px var(--color2), 8px 8px 10px var(--color2), 9px 9px 10px var(--color2), 10px 10px 10px var(--color2), 11px 11px 10px var(--color3), 12px 12px 10px var(--color3), 13px 13px 10px var(--color3), 14px 14px 10px var(--color3), 15px 15px 10px var(--color3);
+    */
+
+	font-family: "Anton", sans-serif;
+	font-size: 200px;
+
+    /*COLORCHANGE ANIMATION */
+    animation-name: colorchange;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange {
+    0% {
+        text-shadow: 1px 1px var(--color1), 2px 2px var(--color1), 3px 3px var(--color1), 4px 4px var(--color1), 5px 5px var(--color1), 6px 6px var(--color2), 7px 7px var(--color2), 8px 8px var(--color2), 9px 9px var(--color2), 10px 10px var(--color2), 11px 11px var(--color3), 12px 12px var(--color3), 13px 13px var(--color3), 14px 14px var(--color3), 15px 15px var(--color3);
+    }
+
+    33% {
+        text-shadow: 1px 1px var(--color2), 2px 2px var(--color2), 3px 3px var(--color2), 4px 4px var(--color2), 5px 5px var(--color2), 6px 6px var(--color3), 7px 7px var(--color3), 8px 8px var(--color3), 9px 9px var(--color3), 10px 10px var(--color3), 11px 11px var(--color1), 12px 12px var(--color1), 13px 13px var(--color1), 14px 14px var(--color1), 15px 15px var(--color1);
+    }
+
+    66% {
+        text-shadow: 1px 1px var(--color3), 2px 2px var(--color3), 3px 3px var(--color3), 4px 4px var(--color3), 5px 5px var(--color3), 6px 6px var(--color1), 7px 7px var(--color1), 8px 8px var(--color1), 9px 9px var(--color1), 10px 10px var(--color1), 11px 11px var(--color2), 12px 12px var(--color2), 13px 13px var(--color2), 14px 14px var(--color2), 15px 15px var(--color2);
+    }
+
+    100% {
+        text-shadow: 1px 1px var(--color1), 2px 2px var(--color1), 3px 3px var(--color1), 4px 4px var(--color1), 5px 5px var(--color1), 6px 6px var(--color2), 7px 7px var(--color2), 8px 8px var(--color2), 9px 9px var(--color2), 10px 10px var(--color2), 11px 11px var(--color3), 12px 12px var(--color3), 13px 13px var(--color3), 14px 14px var(--color3), 15px 15px var(--color3);
+    }
+}
+
+.neon {
+    font-family: "Vibur", cursive;
+    font-size: 300px;
+    text-align: center;
+    position: relative;
+    bottom: var(--goodbye);
+    text-shadow: 5px 5px 10px var(--color1), 9px 9px 10px var(--color2), 13px 13px 10px var(--color3);
+}
